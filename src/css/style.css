@@ -5,24 +5,51 @@
 }
 
 body{
-    background-image: url("../img/background.jpg");
     width: 100vw;
     height: 100vh;
+    
+    background-image: url("../img/background.jpg");
     background-size: cover;
+    overflow: hidden;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,.4) 80%,rgba(0,0,0,.4) 80%,rgba(0,0,0,.4));
+    z-index: 1;
 }
 
 .buttons{
     position: absolute;
-    left: 20px;
-
+    left: 5%;
+    bottom: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
     list-style: none;
+    z-index: 2;
+    gap: 5px;
 }
 
+.buttons li button {
+    background: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.buttons li button:hover{
+    background: yellow;
+}
 
 .buttons li img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    border: 1px solid;
 }

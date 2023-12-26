@@ -43,13 +43,13 @@ body::after {
     cursor: pointer;
 }
 
-.buttons li button:hover{
-    background: yellow;
-}
-
 .buttons li img {
     width: 70px;
     height: 70px;
     background-size: cover;
-    border: 1px solid;
+    border: 2px solid gray;
+}
+
+.buttons li img:hover{
+    border: 2px solid #72bcd4;
 }

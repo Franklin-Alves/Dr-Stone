@@ -82,19 +82,19 @@ body::after {
 }
 
 
-.buttons li button {
+.buttons li .btn {
     display: flex;
     background: 0;
     border: 2px solid gray;
     cursor: pointer;
 }
 
-.buttons li button:hover{
+.buttons li .btn:hover{
     border: 2px solid #72bcd4;
 
 }
 
-.buttons li .selected {
+.buttons li .btn .selected {
     border: 2px solid #72bcd4;
 }
 
